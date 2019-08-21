@@ -237,6 +237,10 @@ class FrontEnd(object):
                 else:
                     self.left_right_velocity = 0
 
+                if k == ord('b'):
+                    self.tello.flip_back()
+                    self.tello.flip_left()
+
             # Quit the software
             if k == 27:
                 should_stop = True
